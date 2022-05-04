@@ -1,0 +1,24 @@
+<!-- MENÚ DESPLEGABLE DEL PERFIL -->
+<div class="flex justify-content-end flex-wrap">
+
+  <div class="flex align-items-center justify-content-center">
+    <span class="p-input-icon-left">
+      <i class="pi pi-search"></i>
+      <input type="text" pInputText placeholder="Buscar">
+    </span>
+  </div>
+
+  <div class="flex align-items-center justify-content-center w-4rem h-4rem font-bold">
+    <button pButton type="button" (click)="add.toggle($event)" class="p-button-rounded p-button-sm"
+      icon="pi pi-plus"></button>
+    <p-menu #add [popup]="true" [model]="addItems"></p-menu>
+  </div>
+
+  <div class="flex align-items-center justify-content-center w-4rem h-4rem font-bold">
+    <p-avatar class="pointer" (click)="profile.toggle($event)" label="M" size="large" shape="circle"></p-avatar>
+    <p-menu #profile [popup]="true" [model]="profileItems"></p-menu>
+  </div>
+
+</div>
+
+<p-divider></p-divider>

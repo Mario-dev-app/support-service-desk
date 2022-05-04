@@ -5,6 +5,8 @@ import {MenuModule} from 'primeng/menu';
 import {ButtonModule} from 'primeng/button';
 import {AvatarModule} from 'primeng/avatar';
 import {AvatarGroupModule} from 'primeng/avatargroup';
+import {DividerModule} from 'primeng/divider';
+import {InputTextModule} from 'primeng/inputtext';
 
 
 
@@ -17,7 +19,9 @@ import {AvatarGroupModule} from 'primeng/avatargroup';
     MenuModule,
     ButtonModule,
     AvatarModule,
-    AvatarGroupModule
+    AvatarGroupModule,
+    DividerModule,
+    InputTextModule
   ]
 })
 export class PrimeNgModule { }

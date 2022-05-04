@@ -3,11 +3,7 @@
     <app-sidebar></app-sidebar>
   </div>
   <div class="col">
-    <!-- MENÚ DESPLEGABLE DEL PERFIL -->
-    <div class="flex justify-content-end flex-wrap">
-      <p-avatar (click)="menu.toggle($event)" label="M" size="large" shape="circle"></p-avatar>
-      <p-menu #menu [popup]="true" [model]="items"></p-menu>
-    </div>
+    <app-up-navbar></app-up-navbar>
     <router-outlet></router-outlet>
   </div>
 

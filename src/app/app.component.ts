@@ -8,34 +8,6 @@ import { MenuItem } from 'primeng/api';
 })
 export class AppComponent {
 
-  items: MenuItem[] = [];
-
   title = 'prototipo';
-
-  ngOnInit() {
-    this.items = [
-      {
-        label: 'Acciones',
-        items: [
-          {
-            label: 'Salir',
-            icon: 'pi pi-power-off',
-            command: () => {
-              this.cerrarSesion();
-            }
-          },
-          {
-            label: 'Configuración',
-            icon: 'pi pi-cog'
-          }
-        ]
-      }
-    ];
-}
-
-cerrarSesion() {
-  console.log('Cerrando sesión...')
-}
-
 
 }
