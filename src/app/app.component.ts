@@ -16,13 +16,19 @@ export class AppComponent {
     this.items = [
       {
         label: 'Acciones',
-        items: [{
-          label: 'Salir',
-          icon: 'pi pi-power-off',
-          command: () => {
-            this.cerrarSesion();
+        items: [
+          {
+            label: 'Salir',
+            icon: 'pi pi-power-off',
+            command: () => {
+              this.cerrarSesion();
+            }
+          },
+          {
+            label: 'Configuración',
+            icon: 'pi pi-cog'
           }
-        }]
+        ]
       }
     ];
 }
