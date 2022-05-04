@@ -16,9 +16,9 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
 
     this.items = [
-      {label: 'Dashboard', icon: 'pi pi-chart-bar'},
-      {label: 'Tickets', icon: 'pi pi-bookmark'},
-      {label: 'Administración', icon: 'pi pi-shield'}
+      {label: 'Dashboard', icon: 'pi pi-chart-bar', routerLink: 'dashboard'},
+      {label: 'Tickets', icon: 'pi pi-bookmark', routerLink: 'tickets'},
+      {label: 'Administración', icon: 'pi pi-shield', routerLink: 'administracion'}
   ];
   }
 
