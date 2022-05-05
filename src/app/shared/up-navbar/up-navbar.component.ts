@@ -36,7 +36,7 @@ export class UpNavbarComponent implements OnInit {
 
     this.addItems = [
       {
-        label: 'Añadir ticket',
+        label: 'Nuevo ticket',
         icon: 'pi pi-bookmark'
       }
     ]

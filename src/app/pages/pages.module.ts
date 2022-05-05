@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TicketsComponent } from './tickets/tickets.component';
 import { AdministracionComponent } from './administracion/administracion.component';
+import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 
 
@@ -13,7 +14,8 @@ import { AdministracionComponent } from './administracion/administracion.compone
     AdministracionComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    PrimeNgModule
   ],
   exports: [
     DashboardComponent

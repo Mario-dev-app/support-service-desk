@@ -7,6 +7,9 @@ import {AvatarModule} from 'primeng/avatar';
 import {AvatarGroupModule} from 'primeng/avatargroup';
 import {DividerModule} from 'primeng/divider';
 import {InputTextModule} from 'primeng/inputtext';
+import {CardModule} from 'primeng/card';
+import {BadgeModule} from 'primeng/badge';
+import {ChartModule} from 'primeng/chart';
 
 
 
@@ -21,7 +24,10 @@ import {InputTextModule} from 'primeng/inputtext';
     AvatarModule,
     AvatarGroupModule,
     DividerModule,
-    InputTextModule
+    InputTextModule,
+    CardModule,
+    BadgeModule,
+    ChartModule
   ]
 })
 export class PrimeNgModule { }
