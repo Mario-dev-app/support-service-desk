@@ -21,6 +21,11 @@ const routes: Routes = [
   {
     path: 'administracion',
     component: AdministracionComponent
+  },
+  {
+    path: '**',
+    redirectTo: 'dashboard',
+    pathMatch: 'full'
   }
 ];
 
