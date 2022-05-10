@@ -10,6 +10,9 @@ import {InputTextModule} from 'primeng/inputtext';
 import {CardModule} from 'primeng/card';
 import {BadgeModule} from 'primeng/badge';
 import {ChartModule} from 'primeng/chart';
+import {TableModule} from 'primeng/table';
+import { ChipModule } from 'primeng/chip';
+import { TagModule } from 'primeng/tag';
 
 
 
@@ -27,7 +30,10 @@ import {ChartModule} from 'primeng/chart';
     InputTextModule,
     CardModule,
     BadgeModule,
-    ChartModule
+    ChartModule,
+    TableModule,
+    ChipModule,
+    TagModule
   ]
 })
 export class PrimeNgModule { }
