@@ -1,36 +1,69 @@
 <div class="grid">
-  <div class="col-9">
+  <div class="col-10">
     <p-table [value]="tickets" responsiveLayout="scroll">
       <ng-template pTemplate="header">
-          <tr>
-              <th>Asunto</th>
-              <th>Solicitante</th>
-              <th>Estado</th>
-              <th>Prioridad</th>
-          </tr>
+        <tr>
+          <th>Asunto</th>
+          <th>Solicitante</th>
+          <th>Estado</th>
+          <th>Prioridad</th>
+        </tr>
       </ng-template>
       <ng-template pTemplate="body" let-ticket>
-          <tr class="cursor-pointer">
-              <td>{{ticket.asunto}}</td>
-              <td>
-                <p-avatar [label]="ticket.solicitante.avatar" size="medium" shape="circle" [style]="ticket.solicitante.color"></p-avatar>
-                {{ticket.solicitante.nombre}}
-              </td>
-              <td>
-                <p-tag styleClass="mr-2" [icon]="ticket.estado.icono" [severity]="ticket.severity" [value]="ticket.estado.etiqueta"></p-tag>
-              </td>
-              <td>
-                {{ticket.prioridad.etiqueta}}
-                <i [class]="ticket.prioridad.icono"></i>
-              </td>
-          </tr>
+        <tr class="cursor-pointer">
+          <td>{{ticket.asunto}}</td>
+          <td>
+            <p-avatar [label]="ticket.solicitante.avatar" size="medium" shape="circle"
+              [style]="ticket.solicitante.color"></p-avatar>
+            {{ticket.solicitante.nombre}}
+          </td>
+          <td>
+            <p-tag styleClass="mr-2" [icon]="ticket.estado.icono" [severity]="ticket.severity"
+              [value]="ticket.estado.etiqueta"></p-tag>
+          </td>
+          <td>
+            {{ticket.prioridad.etiqueta}}
+            <i [class]="ticket.prioridad.icono"></i>
+          </td>
+        </tr>
       </ng-template>
     </p-table>
   </div>
 
-  <div class="col-3 p-5">
+  <div class="col-2 p-5">
     <h3>Filtros</h3>
     <p-divider></p-divider>
+
+    <form (ngSubmit)="filtrar()">
+      <h5>Estado</h5>
+      <div class="field-radiobutton">
+        <p-radioButton name="estado" value="solucionado" [(ngModel)]="estado" inputId="solucionado"></p-radioButton>
+        <label for="solucionado">Solucionado</label>
+      </div>
+      <div class="field-radiobutton">
+        <p-radioButton name="estado" value="pendiete" [(ngModel)]="estado" inputId="pendiente"></p-radioButton>
+        <label for="pendiente">Pendiente</label>
+      </div>
+      <div class="field-radiobutton">
+        <p-radioButton name="estado" value="cerrado" [(ngModel)]="estado" inputId="cerrado"></p-radioButton>
+        <label for="cerrado">Cerrado</label>
+      </div>
+      <div class="field-radiobutton">
+        <p-radioButton name="estado" value="todos" [(ngModel)]="estado" inputId="todos"></p-radioButton>
+        <label for="todos">Todos</label>
+      </div>
+
+      <p-divider></p-divider>
+
+      <h5>Prioridad</h5>
+      <p-multiSelect [options]="prioridades" [ngModelOptions]="{standalone: true}" [(ngModel)]="prioridadSelected" defaultLabel="Seleccionar prioridad" optionLabel="name">
+      </p-multiSelect>
+
+      <p-divider></p-divider>
+
+      <button pButton class="p-button-sm" type="submit">Filtrar</button>
+    </form>
+
+
   </div>
 </div>
-

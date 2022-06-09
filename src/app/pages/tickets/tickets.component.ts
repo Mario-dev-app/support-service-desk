@@ -44,9 +44,24 @@ export class TicketsComponent implements OnInit {
     }
   ];
 
+  estado: string = 'todos';
+
+  prioridades: any[] = [
+    {name: 'Baja', value: 'baja'}, {name: 'Alta', value: 'alta'}
+  ];
+
+  prioridadSelected: any[] = [
+    {name: 'Baja', value: 'baja'}, {name: 'Alta', value: 'alta'}
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  filtrar(){
+    console.log('Estado: ', this.estado)
+    console.log(this.prioridadSelected);
   }
 
 }

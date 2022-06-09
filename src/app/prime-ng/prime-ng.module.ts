@@ -13,6 +13,8 @@ import {ChartModule} from 'primeng/chart';
 import {TableModule} from 'primeng/table';
 import { ChipModule } from 'primeng/chip';
 import { TagModule } from 'primeng/tag';
+import {RadioButtonModule} from 'primeng/radiobutton';
+import {MultiSelectModule} from 'primeng/multiselect';
 
 
 
@@ -33,7 +35,9 @@ import { TagModule } from 'primeng/tag';
     ChartModule,
     TableModule,
     ChipModule,
-    TagModule
+    TagModule,
+    RadioButtonModule,
+    MultiSelectModule
   ]
 })
 export class PrimeNgModule { }
