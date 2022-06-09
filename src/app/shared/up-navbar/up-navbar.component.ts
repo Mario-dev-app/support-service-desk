@@ -8,6 +8,8 @@ import { MenuItem } from 'primeng/api';
 })
 export class UpNavbarComponent implements OnInit {
 
+  visible: boolean = false;
+
   constructor() { }
 
   profileItems: MenuItem[] = [];
@@ -37,13 +39,21 @@ export class UpNavbarComponent implements OnInit {
     this.addItems = [
       {
         label: 'Nuevo ticket',
-        icon: 'pi pi-bookmark'
+        icon: 'pi pi-bookmark',
+        command: () => {
+          this.cambiarVisibilidad();
+        }
       }
     ]
   }
 
   cerrarSesion() {
     console.log('Cerrando sesión...')
+  }
+
+
+  cambiarVisibilidad(){
+    this.visible = !this.visible;
   }
 
 }

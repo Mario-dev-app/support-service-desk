@@ -15,6 +15,7 @@ import {ChipModule} from 'primeng/chip';
 import {TagModule} from 'primeng/tag';
 import {RadioButtonModule} from 'primeng/radiobutton';
 import {MultiSelectModule} from 'primeng/multiselect';
+import {SidebarModule} from 'primeng/sidebar';
 
 
 
@@ -38,7 +39,8 @@ import {MultiSelectModule} from 'primeng/multiselect';
     ChipModule,
     TagModule,
     RadioButtonModule,
-    MultiSelectModule
+    MultiSelectModule,
+    SidebarModule
   ]
 })
 export class PrimeNgModule { }
