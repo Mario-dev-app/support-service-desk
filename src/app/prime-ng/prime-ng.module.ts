@@ -11,10 +11,11 @@ import {CardModule} from 'primeng/card';
 import {BadgeModule} from 'primeng/badge';
 import {ChartModule} from 'primeng/chart';
 import {TableModule} from 'primeng/table';
-import { ChipModule } from 'primeng/chip';
-import { TagModule } from 'primeng/tag';
+import {ChipModule} from 'primeng/chip';
+import {TagModule} from 'primeng/tag';
 import {RadioButtonModule} from 'primeng/radiobutton';
 import {MultiSelectModule} from 'primeng/multiselect';
+
 
 
 
