@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import {DropdownModule} from 'primeng/dropdown';
+import {EditorModule} from 'primeng/editor';
 import {MenuModule} from 'primeng/menu';
 import {ButtonModule} from 'primeng/button';
 import {AvatarModule} from 'primeng/avatar';
@@ -16,7 +18,6 @@ import {TagModule} from 'primeng/tag';
 import {RadioButtonModule} from 'primeng/radiobutton';
 import {MultiSelectModule} from 'primeng/multiselect';
 import {SidebarModule} from 'primeng/sidebar';
-
 
 
 
@@ -40,7 +41,9 @@ import {SidebarModule} from 'primeng/sidebar';
     TagModule,
     RadioButtonModule,
     MultiSelectModule,
-    SidebarModule
+    SidebarModule,
+    DropdownModule,
+    EditorModule
   ]
 })
 export class PrimeNgModule { }

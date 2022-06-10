@@ -40,9 +40,7 @@ export class UpNavbarComponent implements OnInit {
       {
         label: 'Nuevo ticket',
         icon: 'pi pi-bookmark',
-        command: () => {
-          this.cambiarVisibilidad();
-        }
+        routerLink: 'nuevo-ticket'
       }
     ]
   }
@@ -51,9 +49,5 @@ export class UpNavbarComponent implements OnInit {
     console.log('Cerrando sesión...')
   }
 
-
-  cambiarVisibilidad(){
-    this.visible = !this.visible;
-  }
 
 }

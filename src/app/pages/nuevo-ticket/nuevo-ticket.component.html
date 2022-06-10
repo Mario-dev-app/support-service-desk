@@ -1,0 +1,31 @@
+<h4>Registrar nuevo ticket <i class="pi pi-ticket"></i></h4>
+<p-divider></p-divider>
+<form (ngSubmit)="registrar()">
+    <div class="p-fluid grid">
+        <div class="col-4">
+            <h5>Asunto:</h5>
+            <input [ngModelOptions]="{standalone: true}" class="p-inputtext-lg" type="text" pInputText [(ngModel)]="ticket.asunto">
+            <h5>Estado:</h5>
+            <p-dropdown [options]="estados" [ngModelOptions]="{standalone: true}" [(ngModel)]="ticket.estado" placeholder="Seleccione el estado"
+                optionLabel="name"></p-dropdown>
+            <!-- <p-dropdown [options]="estados" [(ngModel)]="ticket.estado" placeholder="Seleccione el estado" optionLabel="estado"
+              [showClear]="true"></p-dropdown> -->
+        </div>
+        <div class="col-4">
+            <h5>Solicitante:</h5>
+            <input [ngModelOptions]="{standalone: true}" class="p-inputtext-lg" type="text" pInputText [(ngModel)]="ticket.solicitante">
+            <h5>Prioridad:</h5>
+            <p-dropdown [options]="prioridades" [ngModelOptions]="{standalone: true}" [(ngModel)]="ticket.prioridad" placeholder="Seleccione la prioridad"
+                optionLabel="name"></p-dropdown>
+        </div>
+    </div>
+    <div class="p-fluid grid">
+        <div class="col-6">
+            <h5>Descripción: </h5>
+            <p-editor [ngModelOptions]="{standalone: true}" [(ngModel)]="ticket.descripcion" [style]="{'height':'320px'}"></p-editor>
+        </div>
+    </div>
+
+    <button pButton type="submit">Registrar</button>
+
+</form>

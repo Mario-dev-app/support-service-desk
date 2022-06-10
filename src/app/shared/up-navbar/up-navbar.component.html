@@ -1,8 +1,3 @@
-<!-- REGISTRAR NUEVO TICKET -->
-<p-sidebar [(visible)]="visible" position="left" [baseZIndex]="10000">
-  <h5>Registrar nuevo ticket</h5>
-</p-sidebar>
-
 <!-- MENÚ DESPLEGABLE DEL PERFIL -->
 <div class="flex justify-content-end flex-wrap">
 
@@ -16,7 +11,8 @@
   <div class="flex align-items-center justify-content-center w-4rem h-4rem font-bold">
     <!-- <button pButton type="button" (click)="add.toggle($event)" class="p-button-rounded p-button-sm"
       icon="pi pi-plus"></button> -->
-      <p-avatar class="cursor-pointer" [style]="{'background-color': 'var(--primary-color)', 'color': '#ffffff'}" (click)="add.toggle($event)" icon="pi pi-plus" size="medium" shape="circle"></p-avatar>
+    <p-avatar class="cursor-pointer" [style]="{'background-color': 'var(--primary-color)', 'color': '#ffffff'}"
+      (click)="add.toggle($event)" icon="pi pi-plus" size="medium" shape="circle"></p-avatar>
     <p-menu #add [popup]="true" [model]="addItems"></p-menu>
   </div>
 
@@ -30,5 +26,3 @@
 </div>
 
 <p-divider></p-divider>
-
-

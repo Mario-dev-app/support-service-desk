@@ -5,6 +5,7 @@ import { TicketsComponent } from './tickets/tickets.component';
 import { AdministracionComponent } from './administracion/administracion.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { FormsModule } from '@angular/forms';
+import { NuevoTicketComponent } from './nuevo-ticket/nuevo-ticket.component';
 
 
 
@@ -12,7 +13,8 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     DashboardComponent,
     TicketsComponent,
-    AdministracionComponent
+    AdministracionComponent,
+    NuevoTicketComponent
   ],
   imports: [
     CommonModule,
